@@ -1,0 +1,18 @@
+Proceso ISR
+
+    Definir sueldoMensual, sueldoAnual, impuesto Como Real
+
+    Escribir "Ingrese el sueldo mensual:"
+    Leer sueldoMensual
+
+    sueldoAnual <- sueldoMensual * 12
+
+    Si sueldoAnual <= 416220 Entonces
+        impuesto <- 0
+    Sino
+        impuesto <- sueldoAnual * 0.15
+    FinSi
+
+    Escribir "ISR mensual: ", impuesto / 12
+
+FinProceso
